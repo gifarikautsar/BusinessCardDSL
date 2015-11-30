@@ -4,7 +4,6 @@
 //package com.solutionsfit.dsl.memotemplate
 
 import groovy.xml.MarkupBuilder
-
 /**
  * Processes a simple DSL to create various formats of a memo: xml, html, and text
  */
@@ -99,6 +98,7 @@ class MemoDsl {
                 h1("Memo")
                 h3("To: ${memoDsl.toText}")
                 h3("From: ${memoDsl.fromText}")
+                div (style: "font-weight: bold; font-size: 15px; text-align: center;",  "lalala")
                 p(memoDsl.body)
                 // cycle through the stored section objects and create uppercase/bold section with body
                 for (s in memoDsl.sections) {

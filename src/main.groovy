@@ -2,16 +2,25 @@
  * Created by gifarikautsar on 11/30/15.
  */
 
+import BusinessCard
+
 bc = new BusinessCard()
 md = new MemoDsl()
-
+bc.hello()
+agi = "agilalala"
 //mdt = new MemolDslTest()
 //mdt.testDslUsage_outputHtml()
-MemoDsl.make {
-    to "Nirav Assar"
-    from "Barack Obama"
-    body "How are things? We are doing well. Take care"
-    idea "The economy is key"
-    request "Please vote for me"
+BusinessCard.make {
+    namaPemilik "agi"
+    jabatan "mahasiswa"
+    email "a@a.com"
+    noHandphone "09182"
+    namaPerusahaan "ITB"
+    webPerusahaan "itb.ac.id"
+    facebookUsername "agilalala"
+    twitterUsername "lalalaagi"
+    linkedIn "agiagi"
     html
 }
+
+bc.hello()
