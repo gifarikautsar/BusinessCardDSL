@@ -153,6 +153,14 @@ class BusinessCard {
                         }
                     }
                 }
+                script (src:"assets/js/jquery.js")
+                script (src:"assets/js/bootstrap.min.js")
+                script(
+                        "\n\t\$(\'#myTab a\').click(function (e) {\n"+
+                                "\t    e.preventDefault()\n" +
+                                "\t    \$(this).tab(\'show\')\n" +
+                                "\t})\n\t"
+                )
             }
         }
         println writer
