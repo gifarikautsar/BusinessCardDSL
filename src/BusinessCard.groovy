@@ -97,29 +97,39 @@ class BusinessCard {
                             div (class:"col-md-8"){
                                 div (class:"tab-content"){
                                     // First Tab
-                                    div class:"tab-pane active", id:"about"
-                                    h3 "Teresa Nirmala"
-                                    h5 "Aero Engineer Wanna Be"
-                                    hr{}
-                                    br{}
-                                    h2{
-                                        center "Because Simplicity is The Ultimate Sophistication"
-                                    }
-                                    p (class:"pull-right red"){
-                                        i class:"icon-heart"
+                                    div (class:"tab-pane active", id:"about"){
+                                        h3 "${businessCard.namaPemilik}"
+                                        h5 "${businessCard.jabatan}"
+                                        hr{}
+                                        br{}
+                                        h2{
+                                            center "Because Simplicity is The Ultimate Sophistication"
+                                        }
+                                        p (class:"pull-right red"){
+                                            i class:"icon-heart"
+                                        }
                                     }
                                     // Fourth Tab
-                                    div class:"tab-pane", id:"contact"
-                                    h3 "Teresa Nirmala"
-                                    h5 "Aero Engineer Wanna Be"
-                                    hr{}
-                                    br{}
-                                    h2{
-                                        center "Because Simplicity is The Ultimate Sophistication"
+                                    div (class:"tab-pane", id:"contact"){
+                                        h4 "Contact Information"
+                                        hr{}
+                                        div (class:"row"){
+                                            div (class:"col-xs-6"){
+                                                p (class:"sm"){
+                                                    i class:"icon-globe" , " - ${businessCard.linkedIn}"
+                                                    br{}
+                                                    i class:"icon-envelope" , " - ${businessCard.email}"
+                                                }
+                                            }
+                                            div (class:"col-xs-6"){
+                                                p (class:"sm"){
+                                                    i class:"icon-phone" , " - ${businessCard.noHandphone}"
+                                                    br{}
+                                                }
+                                            }
+                                        }
                                     }
-                                    p (class:"pull-right red"){
-                                        i class:"icon-heart"
-                                    }
+
                                 }
                             }
                         }
