@@ -6,7 +6,8 @@ import BusinessCard
 
 bc = new BusinessCard()
 md = new MemoDsl()
-
+bc.hello()
+agi = "agilalala"
 //mdt = new MemolDslTest()
 //mdt.testDslUsage_outputHtml()
 BusinessCard.make {
