@@ -4,6 +4,7 @@ import groovy.xml.MarkupBuilder
  * Created by gifarikautsar on 11/30/15.
  */
 class BusinessCard {
+    // attributes
     String namaPemilik
     String jabatan
     String email
@@ -64,6 +65,17 @@ class BusinessCard {
             head{
                 meta (charset:"utf-8")
                 meta (name:" viewport; content: width= device-width; initial-scale: 1.0")
+            }
+            body{
+                div (class:"container"){
+                    div (class:"col-lg-6 col-lg-offset-3"){
+                        div (class:"row w"){
+                            div (class:"col-md-4"){
+                                img (class:"img-responsive", src:"assets/img/avatar.jpg", alt:"")
+                            }
+                        }
+                    }
+                }
             }
             p("Nama: ${businessCard.namaPemilik}")
             p("Jabatan: ${businessCard.jabatan}")

@@ -2,6 +2,8 @@
  * Created by gifarikautsar on 11/30/15.
  */
 
+import BusinessCard
+
 bc = new BusinessCard()
 md = new MemoDsl()
 
@@ -19,3 +21,5 @@ BusinessCard.make {
     linkedIn "agiagi"
     html
 }
+
+bc.hello()
