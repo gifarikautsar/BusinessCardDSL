@@ -111,6 +111,7 @@ class BusinessCard {
                                     }
                                     // Fourth Tab
                                     div (class:"tab-pane", id:"contact"){
+                                        // Top
                                         h4 "Contact Information"
                                         hr{}
                                         div (class:"row"){
@@ -128,24 +129,31 @@ class BusinessCard {
                                                 }
                                             }
                                         }
+                                        // Bot
+                                        h4 "Social Links"
+                                        hr{}
+                                        div (class:"row"){
+                                            div (class:"col-xs-6"){
+                                                p (class:"sm"){
+                                                    i class:"icon-facebook", " - "
+                                                    a href:"https://www.facebook.com/${businessCard.facebookUsername}", "${businessCard.facebookUsername}"
+                                                    i class:"icon-twitter", " - "
+                                                    a href:"https://www.twitter.com/${businessCard.twitterUsername}", "${businessCard.twitterUsername}"
+                                                }
+                                            }
+                                            div (class:"col-xs-6"){
+                                                p (class:"sm"){
+                                                    a href:"${businessCard.namaPerusahaan} - ${businessCard.webPerusahaan}"
+                                                }
+                                            }
+                                        }
                                     }
-
                                 }
                             }
                         }
                     }
                 }
             }
-            p("Nama: ${businessCard.namaPemilik}")
-            p("Jabatan: ${businessCard.jabatan}")
-            p("Email: ${businessCard.email}")
-            p("No. Handphone: ${businessCard.noHandphone}")
-            p("Nama Perusahaan: ${businessCard.namaPerusahaan}")
-            p("Web Perusahaan: ${businessCard.webPerusahaan}")
-            p("Facebook: ${businessCard.facebookUsername}")
-            p("Twitter: ${businessCard.twitterUsername}")
-            p("LinkedIn: ${businessCard.linkedIn}")
-
         }
         println writer
     }
