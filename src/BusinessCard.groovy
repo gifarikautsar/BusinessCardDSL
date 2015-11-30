@@ -79,9 +79,48 @@ class BusinessCard {
             body{
                 div (class:"container"){
                     div (class:"col-lg-6 col-lg-offset-3"){
+                        // Navigation
                         div (class:"row w"){
+                            // Tab
                             div (class:"col-md-4"){
-                                img (class:"img-responsive", src:"assets/img/avatar.jpg", alt:"")
+                                img class:"img-responsive", src:"assets/img/avatar.jpg", alt:""
+                                ul (class:"nav nav-tabs nav-stacked", id:"myTab"){
+                                    li (class:"active"){
+                                        a href:"#about", "About"
+                                    }
+                                    li{
+                                        a href:"#contact", "Contact"
+                                    }
+                                }
+                            }
+                            // Content
+                            div (class:"col-md-8"){
+                                div (class:"tab-content"){
+                                    // First Tab
+                                    div class:"tab-pane active", id:"about"
+                                    h3 "Teresa Nirmala"
+                                    h5 "Aero Engineer Wanna Be"
+                                    hr{}
+                                    br{}
+                                    h2{
+                                        center "Because Simplicity is The Ultimate Sophistication"
+                                    }
+                                    p (class:"pull-right red"){
+                                        i class:"icon-heart"
+                                    }
+                                    // Fourth Tab
+                                    div class:"tab-pane", id:"contact"
+                                    h3 "Teresa Nirmala"
+                                    h5 "Aero Engineer Wanna Be"
+                                    hr{}
+                                    br{}
+                                    h2{
+                                        center "Because Simplicity is The Ultimate Sophistication"
+                                    }
+                                    p (class:"pull-right red"){
+                                        i class:"icon-heart"
+                                    }
+                                }
                             }
                         }
                     }
